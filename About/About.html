@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan's Portfolio | About</title>
+
+    <!-- fonts, icons -->
+    <link rel="icon" type="image/png" href="/Images/android-chrome-512x512.png">
+    <link rel="manifest" href="/Images/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="About.css">
+</head>
+<body id="parallax">
+
+    <!-- navbar -->
+    <nav class="navbar-container">
+        <h1 class="name-logo" title="Jordan Abbott"><a href="/Index/index.html" id="name-logo">Jordan Abbott</a></h1>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="/Index/index.html" title="Home">Home</a></li>
+                <li><a href="/About/About.html" class="active-page" title="About">About</a></li>
+                <li><a href="/Portfolio/Portfolio.html" title="Portfolio">Portfolio</a></li>
+                <li><a href="/Work/Work.html" title="Work">Work</a></li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <a href="#" id="light-mode" title="Light/Dark-Mode-Toggle-Button"><i class="fa-solid fa-circle-half-stroke"></i></a>
+            <a href="https://github.com/J0rdan-Abbott" target="_blank" title="Github"><i class="fa-brands fa-git-alt"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100026525924144" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/JordanA62489040" target="_blank" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/jordanabbott22/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/jordan-abbott-234383249/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </nav>
+
+    <div class="navbar-open" onclick="openNav()" title="Open Navigation"><i class="fa-solid fa-bars"></i></div>
+
+    <!-- navbar for hamburger -->
+    <nav class="navbar-container-hamburger">
+        <div class="navbar-close" onclick="closeNav()" title="Close Navigation"><i class="fa-solid fa-xmark"></i></div>
+        <div class="navbar-links-hamburger">
+            <ul>
+                <li><a href="/Index/index.html" title="Home">Home</a></li>
+                <li><a href="/About/About.html" class="active-page" title="About">About</a></li>
+                <li><a href="/Portfolio/Portfolio.html" title="Portfolio">Portfolio</a></li>
+                <li><a href="/Work/Work.html" title="Work">Work</a></li>
+            </ul>
+        </div>
+        <div class="navbar-social-links">
+            <a href="#" id="light-mode-navbar" title="Light/Dark-Mode-Toggle-Button"><i class="fa-solid fa-circle-half-stroke"></i></a>
+            <a href="https://github.com/J0rdan-Abbott" target="_blank" title="Github"><i class="fa-brands fa-git-alt"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100026525924144" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/JordanA62489040" target="_blank" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/jordanabbott22/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/jordan-abbott-234383249/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </nav>
+
+    <!-- about me info -->
+    <div class="about-me-container" id="about-me-container">
+        <h1 class="about-me-title" id="about-me-title">About Me</h1>
+        <div class="about-me-text">
+            <dl>
+                <dt>I enjoy many things such as:</dt>
+                    <br/>
+                    <dd>- Language learning, both computer and world languages such as Japanese and Chinese</dd>
+                    <dd>- Drawing (especially manga)</dd>
+                    <dd>- Playing instruments like guitar and keyboard, though I used to play saxophone too</dd>
+                    <dd>- I also like sleight of hand and card magic!</dd>
+                    <br/>
+                    <dd>The programming languages I know are listed below:</dd>
+            </dl>
+        </div>
+
+        <div class="about-me-icons">
+            <img src="/Images/html-logo.png" alt="" class="html-logo" title="HTML 5">
+            <img src="/Images/css-logo.png" alt="" class="css-logo" title="CSS 3">
+            <i class="fa-brands fa-js" title="Javascript">
+                <span></span>
+            </i>
+            <i class="fa-brands fa-react" class="react" title="React"></i>
+            <img src="/Images/node-logo.png" alt="" class="node-logo" title="Node JS">
+            <img src="/Images/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png" alt="" class="mongo-db-logo" title="MongoDB">
+            <img src="/Images/git-logo.png" alt="" class="git-logo" title="Git">
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer-container">
+        <div class="footer-nav" id="footer-nav">
+            <ul>
+                <li><a href="/Index/index.html" title="Home">Home</a></li>
+                <li><a href="/About/About.html" class="footer-nav-active" title="About">About</a></li>
+                <li><a href="/Portfolio/Portfolio.html" title="Portfolio">Portfolio</a></li>
+                <li><a href="/Work/Work.html" title="Work">Work</a></li>
+            </ul>
+        </div>
+        <hr/>
+        <div class="footer-contact">
+            <p class="copyright">Copyright <i class="fa-regular fa-copyright"></i> Jordan Abbott 2023 Some Rights Reserved</p>
+            <div class="footer-social-links">
+                <a href="https://github.com/J0rdan-Abbott" target="_blank" title="Github"><i class="fa-brands fa-git-alt"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100026525924144" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/JordanA62489040" target="_blank" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/jordanabbott22/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/jordan-abbott-234383249/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="About.js"></script>
+</body>
+</html>
