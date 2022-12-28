@@ -1,0 +1,63 @@
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Press Start 2P', cursive;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- red container -->
+    <div style="position: relative;
+                display: inline-block;">
+        <!-- smaller red container -->
+        <div style="position: absolute;
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    padding: 20px;">
+
+            <!-- player health -->
+            <div style="position: relative; height: 35px; width: 100%; display: flex; justify-content: flex-end; border: 3px solid #fff; border-right: none;">
+                <div style="background-color: red; height: 100%; width: 100%;">
+                </div>
+                <div id="player-health" style="position: absolute; background: #818CF8; top: 0; right: 0; bottom: 0; width: 100%; transition: all 0.5s ease;"></div>
+            </div>
+
+            <!-- timer -->
+            <div id="timer" style="background-color: #533;
+                        width: 100px;
+                        height: 60px;
+                        flex-shrink: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
+                        font-size: 1.5rem;
+                        border: 3px solid #fff;">10
+            </div>
+
+            <!-- enemy health -->
+            <div style="position: relative; height: 35px; width: 100%; border: 3px solid #fff; border-left: none;">
+                <div style="background-color: red; height: 100%;">
+                </div>
+                <div id="enemy-health" style="position: absolute; background: #818CF8; top: 0; right: 0; bottom: 0; left: 0; transition: all 0.5s ease;"></div>
+            </div>
+        </div>
+        <div id="display-text" style="position: absolute; color: #fff; justify-content: center; align-items: center; top: 0; right: 0; bottom: 0; left: 0; font-size: 2rem; display: none;">Tie!</div>
+        <canvas></canvas>
+    </div>
+    
+    <script src="./js/utilities.js"></script>
+    <script src="./js/classes.js"></script>
+    <script src="./index.js"></script>
+</body>
